@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gradient_top.xml: fades from dark to transparent (top bar) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:startColor="#CC0A0A0F"
+        android:endColor="#000A0A0F"
+        android:type="linear" />
+</shape>

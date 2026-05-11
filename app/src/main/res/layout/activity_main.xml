@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <!-- Camera preview fills the screen -->
+    <TextureView
+        android:id="@+id/texture_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_panel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Top bar: app name + flip button -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/gradient_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AURA"
+            android:textColor="#FFFDF8FF"
+            android:textSize="22sp"
+            android:letterSpacing="0.22"
+            android:fontFamily="sans-serif-light" />
+
+        <ImageButton
+            android:id="@+id/btn_flip"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_circle_bg"
+            android:src="@drawable/ic_flip_camera"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:tint="#DDFFFFFF"
+            android:contentDescription="Flip camera" />
+
+    </LinearLayout>
+
+    <!-- Active filter name (fades in/out on change) -->
+    <TextView
+        android:id="@+id/tv_filter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFFDF8FF"
+        android:textSize="13sp"
+        android:letterSpacing="0.14"
+        android:fontFamily="sans-serif-light"
+        android:alpha="0"
+        android:background="@drawable/pill_bg"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Flash overlay (white flash on capture) -->
+    <View
+        android:id="@+id/flash_overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFFFF"
+        android:alpha="0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bottom panel: filter strip + capture button -->
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_bottom"
+        android:paddingBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Horizontal filter thumbnails strip -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_filters"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingHorizontal="12dp"
+            android:clipToPadding="false"
+            android:scrollbarStyle="outsideOverlay"
+            android:overScrollMode="never" />
+
+        <!-- Capture button row -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="32dp">
+
+            <!-- Capture button (centered) -->
+            <ImageButton
+                android:id="@+id/btn_capture"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_shutter"
+                android:background="@drawable/shutter_bg"
+                android:scaleType="centerInside"
+                android:padding="0dp"
+                android:contentDescription="Capture photo"
+                android:elevation="4dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
