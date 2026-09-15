@@ -27,20 +27,33 @@ All filters are applied at full resolution during capture. The filter strip prov
 
 ## 🛠️ Tech Stack
 
-| Technology | Usage |
+<div align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="70" height="70" alt="Java"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="70" height="70" alt="Android"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" width="70" height="70" alt="Gradle"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" width="70" height="70" alt="Material UI"/>
+
+<br><br>
+
+**Java 8 • Android SDK 34 • Camera2 API • AndroidX • Gradle • Material Components**
+
+</div>
+
+| Technology | Purpose |
 |---|---|
-| **Java 8** | Core application development |
-| **Android SDK 34** | Compile and target SDK |
-| **Camera2 API** | Camera preview, camera control, and image capture |
-| **AndroidX AppCompat 1.6.1** | Android compatibility and application components |
-| **ConstraintLayout 2.1.4** | Responsive UI layout |
-| **RecyclerView 1.3.2** | Horizontal filter selection strip |
-| **Material Components 1.11.0** | Material UI components |
-| **Gradle** | Project build and dependency management |
-| **MediaStore API** | Saving captured images to the device gallery |
-| **Bitmap / Pixel Processing** | Image manipulation and filter processing |
-| **Canvas** | Visual effects such as vignettes and overlays |
-| **LUT-based Processing** | Color mapping for effects such as Thermal |
+| ☕ **Java 8** | Core application development |
+| 🤖 **Android SDK 34** | Android application development and API targeting |
+| 📷 **Camera2 API** | Camera preview, camera control, and image capture |
+| 📱 **AndroidX AppCompat 1.6.1** | Android compatibility and application components |
+| 📐 **ConstraintLayout 2.1.4** | Responsive UI layout |
+| 🔄 **RecyclerView 1.3.2** | Horizontal filter selection strip |
+| 🎨 **Material Components 1.11.0** | Material UI components |
+| ⚙️ **Gradle** | Project build and dependency management |
+| 🖼️ **MediaStore API** | Saving captured photos to the device gallery |
+| 🧮 **Bitmap / Pixel Processing** | Image manipulation and filter processing |
+| 🖌️ **Canvas** | Visual effects such as vignettes and overlays |
+| 🌈 **LUT-based Processing** | Color mapping for effects such as Thermal |
 
 ### Platform Requirements
 
@@ -359,46 +372,6 @@ Aura follows a dark and minimal camera interface designed to keep the camera pre
 
 ---
 
-## 🔮 Future Improvements
-
-Potential improvements for future versions include:
-
-- Front-camera support
-- Camera flash control
-- Zoom controls
-- Exposure adjustment
-- Focus control
-- Video recording with filters
-- GPU-accelerated filter processing
-- More customizable filter parameters
-- Filter intensity controls
-- Improved performance on low-end devices
-- Additional cinematic presets
-
----
-
-## 📸 Screenshots
-
-Add application screenshots here to showcase the camera interface and filters.
-
-Example:
-
-```markdown
-![Aura Camera Preview](screenshots/camera-preview.png)
-![Aura Filters](screenshots/filters.png)
-```
-
-Recommended screenshot folder:
-
-```text
-screenshots/
-├── camera-preview.png
-├── filters.png
-└── captured-photo.png
-```
-
----
-
 ## 🧪 Build
 
 To build the debug APK from the command line:
@@ -451,27 +424,6 @@ If you would like to contribute:
 
 ---
 
-## 📄 License
-
-Add your preferred open-source license here.
-
-For example:
-
-```text
-MIT License
-```
-
-if the project is intended to be distributed under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-**Vishanth K**
-
-GitHub: [@vishanth14](https://github.com/vishanth14)
-
----
 
 ## ⭐ Support
 
