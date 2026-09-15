@@ -31,8 +31,7 @@ All filters are applied at full resolution during capture. The filter strip prov
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="70" height="70" alt="Java"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="70" height="70" alt="Android"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" width="70" height="70" alt="Gradle"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" width="70" height="70" alt="Material UI"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg" width="70" height="70" alt="Gradle"/>
 
 <br><br>
 
